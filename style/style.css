@@ -12,6 +12,13 @@
 }
 
 /* Nav */
+.nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
 .nav ul{
     display: flex;
     padding: 10px 0px;
@@ -39,10 +46,12 @@
 .input-search{
     /* margin-left: 15rem; */
 }
+
 .input-search input{
     border: none;
     border-radius: 6px;
-    padding: 0 25px;
+    padding: 0 60px;
+    height: 60px;
 }
 /* img{
     height: auto;
@@ -84,8 +93,7 @@
 .right-main-bg{
     flex: 50%;
 }
-.btn-find-course{
-}
+
 .btn-find-course button{
     margin-top: 3rem;
     background-color: white;
@@ -143,6 +151,27 @@
     background: #ffc221;
     color: black;
 }
+
+/******/
+.subject-area h1,
+.trending-course h1{
+    margin: 35px 0 20px 0;
+}
+
+.subject-area,
+.status-e-learn,
+.people-say-about,
+.subscribe-to-news{
+    background-color: #F8F8F8;
+}
+
+.trending-course,
+.upcoming-education-event{
+    background-color: #FFFFFF;
+}
+
+/******/
+
 /* Subject Area */
 .subject-area-wrapper{
     padding: 20px 0px;
@@ -151,9 +180,9 @@
     grid-template-columns: repeat(4,1fr);
 }
 
-
 .item-subject-area{
     border: 2px solid rgb(233, 227, 227);
+    padding: 15px;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -165,7 +194,113 @@
     border: 2px solid white;
 }
 .image-item-subject-area img{
+    width: 70px;
+    margin-right: 15px;
+    padding-top: 20px;
+}
+
+/* Trending Courses */
+.view-all-courses-btn{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #0071DC;
+}
+
+.view-all-courses-btn:hover{
+    background-color: #0071DC;
+    color: white;
+}
+
+/* Status E-Learn */
+.status-e-learn{
+    padding: 30px 230px;
+}
+
+.status-e-learn-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.image-item-status img{
     width: 100px;
+}
+
+/* Upcoming Education Events */
+.upcoming-education-event{
+    text-align: center;
+    padding: 50px 0;
+}
+
+
+/* People Say About EduMall */
+.people-say-about{
+    text-align: center;
+    padding: 50px 0;
+}
+
+
+/* Partners */
+.collaborate-partner-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.view-all-partners-btn{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #0071DC;
+}
+
+.view-all-partners-btn:hover{
+    background-color: #0071DC;
+    color: white;
+}
+
+.collab-partner-icon{
+    padding: 20px 0;
+    display: grid;
+    gap: 25px 150px;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.item-partner-icon img{
+    width: 70px;
+}
+
+/* Subscribe to newsletter */
+.sub-to-new-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.subscribe-news-btn{
+    position: absolute;
+    top: 50%; right: 0%; transform: translateY(-50%);
+    background-color: #FFC221;
+    font-weight: 600;
+    color: #000000;
+    border: none;
+    padding: 27px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.subscribe-news-btn:hover{
+    background-color: #0071DC;
+    color: #f2f2f2;
 }
 
 /* Customize */
@@ -212,7 +347,7 @@
     justify-content: space-between;
 }
 
-.space-between{
+.space-around{
     justify-content: space-around;
 }
 .color-font-black{
@@ -222,7 +357,7 @@
     height: 3.75rem;
 }
 .bg-white-color{
-    background-color: #f2f2f2;
+    background-color: white;
 }
 .d-block{
     display: block;
@@ -230,6 +365,10 @@
 
 .d-none{
     display: none;
+}
+
+.m-left{
+    margin-left: 15px;
 }
 
 
@@ -312,6 +451,10 @@
    .subject-area-wrapper
    {
        grid-template-columns: repeat(2,1fr);
+   }
+
+   .status-e-learn-wrapper{
+        display: block;
    }
 }
                     /* 639px */
