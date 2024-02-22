@@ -285,7 +285,7 @@
    .main-bg{
         flex-direction: column;
         /* padding: 5rem; */
-        height: 100vh;
+        height: auto;
    }
    .t1, .t2{
         text-align: left;
