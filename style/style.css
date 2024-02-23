@@ -414,6 +414,9 @@
     {
         grid-template-columns: repeat(3,1fr);
     }
+    .collaborate-partner-wrapper{
+        flex-direction: column;
+    }
 }
 
                     /* 766px */
