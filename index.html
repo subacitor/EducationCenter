@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap">
+    <!-- SwipperJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <div class="Wrapper">
@@ -39,6 +41,7 @@
         </div>
 
         <div class="main">
+            <!-- Register account, find courses -->
             <div class="container main-bg bg-heading bg-cover bg-no-repeat bg-center py-24 d-flex it-center space-around container">
                 <div class="left-main-bg">
                     <div class="text t1">FOR A BETTER FUTURE</div>
@@ -164,7 +167,302 @@
                     <button class="view-all-courses-btn">View all Courses</button>
                 </div>
                 <div class="trending-course-wrapper">
-                    <h2 style="text-align: center;"> 🔨 Under Development (Swipper) 🔧</h2>
+                    <div class="swiper-container swiper">   
+                        <div class="swiper-wrapper">
+                            <!-- Slides will be added dynamically here -->
+                            <div class="course-card swiper-slide">
+                                <!-- course image -->
+                                <div class="course-card-image">
+                                    <div class="course-price-tag-free">
+                                        <p>Free</p>
+                                    </div>
+                                    <div class="course-image">
+                                        <a href="#"><img src="https://edumall.vuejstemplate.com/images/courses/courses-1.jpg" alt=""></a>             
+                                    </div>
+                                </div>
+                                <div class="course-card-content">
+                                    <!-- course level: all, beginner, intermediate, expert -->
+                                    <div class="course-level-type-all">
+                                        All Levels
+                                    </div>
+                                    <!-- course type: development, art & design, business... -->
+                                    <div class="course-type">
+                                        <h4><a href="#">Development</a></h4>
+                                    </div>
+                                    <!-- course header -->
+                                    <div class="course-heading-text">
+                                        <a href="#">Successful <br> Negotiation: Master Your Negotiating Skills</a>
+                                    </div>
+                                    <!-- course description -->
+                                    <div class="course-description">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus earum saepe et voluptatem quasi provident, nulla perferendis ipsum sint voluptate delectus unde voluptas dolorum natus quidem soluta quam numquam fugiat!
+                                    </div>
+                                    <!-- course status: rating, participants -->
+                                    <div class="course-status">
+                                        <!-- course rating -->
+                                        <div class="course-rating">
+                                            <span><span>4.5</span>/5</span>
+                                            <div class="course-rating-star">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                            </div>
+                                        </div>
+                                        <!-- people participated in this course -->
+                                        <div class="course-participated" style="margin-top: 20px;">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span>10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-card swiper-slide">
+                                <!-- course image -->
+                                <div class="course-card-image">
+                                    <div class="course-price-tag-not-free">
+                                        <p>$50.00</p>
+                                    </div>
+                                    <div class="course-image">
+                                        <a href="#"><img src="https://edumall.vuejstemplate.com/images/courses/courses-5.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="course-card-content">
+                                    <!-- course level: all, beginner, intermediate, expert -->
+                                    <div class="course-level-type-beginner">
+                                        Beginner
+                                    </div>
+                                    <!-- course type: development, art & design, business... -->
+                                    <div class="course-type">
+                                        <h4><a href="#">Teaching Academic</a></h4>
+                                    </div>
+                                    <!-- course header -->
+                                    <div class="course-heading-text">
+                                        <a href="#">Become a Product <br> Manager | Learn the Skills & Get the Job</a>
+                                    </div>
+                                    <!-- course description -->
+                                    <div class="course-description">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus earum saepe et voluptatem quasi provident, nulla perferendis ipsum sint voluptate delectus unde voluptas dolorum natus quidem soluta quam numquam fugiat!
+                                    </div>
+                                    <!-- course status: rating, participants -->
+                                    <div class="course-status">
+                                        <!-- course rating -->
+                                        <div class="course-rating">
+                                            <span><span>4.5</span>/5</span>
+                                            <div class="course-rating-star">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                            </div>
+                                        </div>
+                                        <!-- people participated in this course -->
+                                        <div class="course-participated" style="margin-top: 20px;">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span>10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-card swiper-slide">
+                                <!-- course image -->
+                                <div class="course-card-image">
+                                    <div class="course-price-tag-free">
+                                        <p>Free</p>
+                                    </div>
+                                    <div class="course-image">
+                                        <a href="#"><img src="https://edumall.vuejstemplate.com/images/courses/courses-22.jpg" alt=""></a>                           
+                                    </div>
+                                </div>
+                                <div class="course-card-content">
+                                    <!-- course level: all, beginner, intermediate, expert -->
+                                    <div class="course-level-type-expert">
+                                        Finance
+                                    </div>
+                                    <!-- course type: development, art & design, business... -->
+                                    <div class="course-type">
+                                        <h4><a href="#">Development</a></h4>
+                                    </div>
+                                    <!-- course header -->
+                                    <div class="course-heading-text">
+                                        <a href="#">Administrators and <br> IT Professionals Strategies</a>    
+                                    </div>
+                                    <!-- course description -->
+                                    <div class="course-description">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus earum saepe et voluptatem quasi provident, nulla perferendis ipsum sint voluptate delectus unde voluptas dolorum natus quidem soluta quam numquam fugiat!
+                                    </div>
+                                    <!-- course status: rating, participants -->
+                                    <div class="course-status">
+                                        <!-- course rating -->
+                                        <div class="course-rating">
+                                            <span><span>4.5</span>/5</span>
+                                            <div class="course-rating-star">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                            </div>
+                                        </div>
+                                        <!-- people participated in this course -->
+                                        <div class="course-participated" style="margin-top: 20px;">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span>10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-card swiper-slide">
+                                <!-- course image -->
+                                <div class="course-card-image">
+                                    <div class="course-price-tag-not-free">
+                                        <p>$50.00</p>
+                                    </div>
+                                    <div class="course-image">
+                                        <a href="#"><img src="https://edumall.vuejstemplate.com/images/courses/courses-1.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="course-card-content">
+                                    <!-- course level: all, beginner, intermediate, expert -->
+                                    <div class="course-level-type-all">
+                                        All Levels
+                                    </div>
+                                    <!-- course type: development, art & design, business... -->
+                                    <div class="course-type">
+                                        <h4><a href="#">Development</a></h4>
+                                    </div>
+                                    <!-- course header -->
+                                    <div class="course-heading-text">
+                                        <a href="#">Successful <br> Negotiation: Master Your Negotiating Skills</a>                                    
+                                    </div>
+                                    <!-- course description -->
+                                    <div class="course-description">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus earum saepe et voluptatem quasi provident, nulla perferendis ipsum sint voluptate delectus unde voluptas dolorum natus quidem soluta quam numquam fugiat!
+                                    </div>
+                                    <!-- course status: rating, participants -->
+                                    <div class="course-status">
+                                        <!-- course rating -->
+                                        <div class="course-rating">
+                                            <span><span>4.5</span>/5</span>
+                                            <div class="course-rating-star">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                            </div>
+                                        </div>
+                                        <!-- people participated in this course -->
+                                        <div class="course-participated" style="margin-top: 20px;">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span>10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-card swiper-slide">
+                                <!-- course image -->
+                                <div class="course-card-image">
+                                    <div class="course-price-tag-free">
+                                        <p>Free</p>
+                                    </div>
+                                    <div class="course-image">
+                                        <a href="#"><img src="https://edumall.vuejstemplate.com/images/courses/courses-5.jpg" alt=""></a>                
+                                    </div>
+                                </div>
+                                <div class="course-card-content">
+                                    <!-- course level: all, beginner, intermediate, expert -->
+                                    <div class="course-level-type-beginner">
+                                        Beginner
+                                    </div>
+                                    <!-- course type: development, art & design, business... -->
+                                    <div class="course-type">
+                                        <h4><a href="#">Teaching Academic</a></h4>
+                                    </div>
+                                    <!-- course header -->
+                                    <div class="course-heading-text">
+                                        <a href="#">Become a Product <br> Manager | Learn the Skills & Get the Job</a>
+                                    </div>
+                                    <!-- course description -->
+                                    <div class="course-description">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus earum saepe et voluptatem quasi provident, nulla perferendis ipsum sint voluptate delectus unde voluptas dolorum natus quidem soluta quam numquam fugiat!
+                                    </div>
+                                    <!-- course status: rating, participants -->
+                                    <div class="course-status">
+                                        <!-- course rating -->
+                                        <div class="course-rating">
+                                            <span><span>4.5</span>/5</span>
+                                            <div class="course-rating-star">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                            </div>
+                                        </div>
+                                        <!-- people participated in this course -->
+                                        <div class="course-participated" style="margin-top: 20px;">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span>10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-card swiper-slide">
+                                <!-- course image -->
+                                <div class="course-card-image">
+                                    <div class="course-price-tag-not-free">
+                                        <p>$50.00</p>
+                                    </div>
+                                    <div class="course-image">
+                                        <a href="#"><img src="https://edumall.vuejstemplate.com/images/courses/courses-22.jpg" alt=""></a>   
+                                    </div>
+                                </div>
+                                <div class="course-card-content">
+                                    <!-- course level: all, beginner, intermediate, expert -->
+                                    <div class="course-level-type-expert">
+                                        Finance
+                                    </div>
+                                    <!-- course type: development, art & design, business... -->
+                                    <div class="course-type">
+                                        <h4><a href="#">Development</a></h4>
+                                    </div>
+                                    <!-- course header -->
+                                    <div class="course-heading-text">
+                                        <a href="#">Administrators and <br> IT Professionals Strategies</a>     
+                                    </div>
+                                    <!-- course description -->
+                                    <div class="course-description">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus earum saepe et voluptatem quasi provident, nulla perferendis ipsum sint voluptate delectus unde voluptas dolorum natus quidem soluta quam numquam fugiat!
+                                    </div>
+                                    <!-- course status: rating, participants -->
+                                    <div class="course-status">
+                                        <!-- course rating -->
+                                        <div class="course-rating">
+                                            <span><span>4.5</span>/5</span>
+                                            <div class="course-rating-star">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                            </div>
+                                        </div>
+                                        <!-- people participated in this course -->
+                                        <div class="course-participated" style="margin-top: 20px;">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span>10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
                 </div>
             </div>
 
@@ -195,7 +493,140 @@
                 <p>Where people find all events that they may want to involve</p>
 
                 <div class="upcoming-education-event-wrapper">
-                    <h2 style="text-align: center;"> 🔨 Under Development (Swipper) 🔧</h2>
+                    <div class="swiper-container swiper">
+                        <div class="swiper-wrapper">
+                         <!-- Slides will be added dynamically here -->  
+                            <div class="up-education-card swiper-slide">
+                            <!-- course image -->
+                            <div class="up-education-card-image">
+                                <div class="up-education-date">
+                                    <p>AUGUST 18, 2024</p>
+                                </div>
+                                <div class="up-education-event-image">
+                                    <a href="#"><img src="https://edumall.vuejstemplate.com/images/event/event-thumbnail-01.jpg" alt=""></a>   
+                                </div>
+                            </div>
+                            <div class="up-education-card-content">
+                                <!-- upcoming edcation event header -->
+                                <div class="up-coming-heading-text">
+                                    <a href="#">Global Education Fall <br> Meeting for Everyone </a>
+                                </div>
+                                <!-- upcoming event location -->
+                                <div class="up-coming-event-date">
+                                    <i class="fa-solid fa-location-dot"></i> New York
+                                </div>
+                                </div>
+                                </div>
+                            <div class="up-education-card swiper-slide">
+                                <!-- course image -->
+                                <div class="up-education-card-image">
+                                    <div class="up-education-date">
+                                        <p>MARCH 26, 2024</p>
+                                    </div>
+                                    <div class="up-education-event-image">
+                                        <a href="#"><img src="https://edumall.vuejstemplate.com/images/event/event-thumbnail-02.jpg" alt=""></a>    
+                                    </div>
+                                </div>
+                                <div class="up-education-card-content">
+                                    <!-- upcoming edcation event header -->
+                                    <div class="up-coming-heading-text">
+                                        <a href="#">Digital Skills: Using <br> Information to Build Business </a>
+                                    </div>
+                                    <!-- upcoming event location -->
+                                    <div class="up-coming-event-date">
+                                        <i class="fa-solid fa-location-dot"></i> London
+                                    </div>
+                                    </div>
+                                </div>
+                            <div class="up-education-card swiper-slide">
+                                    <!-- course image -->
+                                    <div class="up-education-card-image">
+                                        <div class="up-education-date">
+                                            <p>AUGUST 18, 2024</p>
+                                        </div>
+                                        <div class="up-education-event-image">
+                                            <a href="#"><img src="https://edumall.vuejstemplate.com/images/event/event-thumbnail-04.jpg" alt=""></a>  
+                                        </div>
+                                    </div>
+                                    <div class="up-education-card-content">
+                                        <!-- upcoming edcation event header -->
+                                        <div class="up-coming-heading-text">
+                                            <a href="#">Creating Futures <br> Through Technology Conference </a>
+                                        </div>
+                                        <!-- upcoming event location -->
+                                        <div class="up-coming-event-date">
+                                            <i class="fa-solid fa-location-dot"></i> Kansas
+                                        </div>
+                                        </div>
+                                </div>
+                            <div class="up-education-card swiper-slide">
+                                    <!-- course image -->
+                                    <div class="up-education-card-image">
+                                        <div class="up-education-date">
+                                            <p>AUGUST 18, 2024</p>
+                                        </div>
+                                        <div class="up-education-event-image">
+                                            <a href="#"><img src="https://edumall.vuejstemplate.com/images/event/event-thumbnail-07.jpg " alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="up-education-card-content">
+                                        <!-- upcoming edcation event header -->
+                                        <div class="up-coming-heading-text">
+                                            <a href="#">Things to Do - <br> Virtual Celebration Brunch and Book Signing </a>
+                                        </div>
+                                        <!-- upcoming event location -->
+                                        <div class="up-coming-event-date">
+                                            <i class="fa-solid fa-location-dot"></i> Berlin
+                                        </div>
+                                        </div>
+                                </div>
+                            <div class="up-education-card swiper-slide">
+                                    <!-- course image -->
+                                    <div class="up-education-card-image">
+                                        <div class="up-education-date">
+                                            <p>AUGUST 18, 2024</p>
+                                        </div>
+                                        <div class="up-education-event-image">
+                                            <a href="#"><img src="https://edumall.vuejstemplate.com/images/event/event-thumbnail-08.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="up-education-card-content">
+                                        <!-- upcoming edcation event header -->
+                                        <div class="up-coming-heading-text">
+                                            <a href="#">How to Photograph <br> Events Without Bothering the Guests </a>
+                                        </div>
+                                        <!-- upcoming event location -->
+                                        <div class="up-coming-event-date">
+                                            <i class="fa-solid fa-location-dot"></i> New Delhi
+                                        </div>
+                                        </div>
+                                </div>
+                            <div class="up-education-card swiper-slide">
+                                    <!-- course image -->
+                                    <div class="up-education-card-image">
+                                        <div class="up-education-date">
+                                            <p>AUGUST 18, 2024</p>
+                                        </div>
+                                        <div class="up-education-event-image">
+                                            <a href="#"><img src="https://edumall.vuejstemplate.com/images/event/event-thumbnail-01.jpg" alt=""></a>     
+                                        </div>
+                                    </div>
+                                    <div class="up-education-card-content">
+                                        <!-- upcoming edcation event header -->
+                                        <div class="up-coming-heading-text">
+                                            <a href="#">Global Education Fall <br> Meeting for Everyone </a>
+                                        </div>
+                                        <!-- upcoming event location -->
+                                        <div class="up-coming-event-date">
+                                            <i class="fa-solid fa-location-dot"></i> New York
+                                        </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <!-- Navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
                 </div>
             </div>
 
@@ -204,8 +635,129 @@
                 <h1>People Say About EduMall</h1>
 
                 <div class="people-say-about-wrapper">
-                    <h2 style="text-align: center;"> 🔨 Under Development (Swipper) 🔧</h2>
+                    <div class="swiper-container swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Slides will be added here -->
+                            <div class="people-say-card swiper-slide">
+                                <!-- people say image -->
+                                <div class="people-say-card-image">
+                                    <div class="people-say-event-image">
+                                        <a href="#"><img src="https://edumall.vuejstemplate.com/images/avatar/avatar-01.jpg" alt=""></a>   
+                                    </div>
+                                </div>
+                                <div class="people-say-card-content">
+                                    <!-- people say header -->
+                                    <div class="people-say-heading-text">
+                                        <h3>Great Quality!</h3>
+                                    </div>
+                                    <!-- people say description -->
+                                    <div class="people-say-description">
+                                        <p>I wanted to place a review since their support helped me within a day or so, which is nice1 Thanks and 5 stars!</p>
+                                    </div>
+                                    <!-- people say info -->
+                                    <div class="people-say-info">
+                                        <h4>Oliver Maya</h4>
+                                        <p style="margin-top: 10px;">/ Designer, HasTheme</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="people-say-card swiper-slide">
+                                <!-- people say image -->
+                                <div class="people-say-card-image">
+                                    <div class="people-say-event-image">
+                                        <a href="#"><img src="https://edumall.vuejstemplate.com/images/avatar/avatar-02.jpg" alt=""></a>   
+                                    </div>
+                                </div>
+                                <div class="people-say-card-content">
+                                    <!-- people say header -->
+                                    <div class="people-say-heading-text">
+                                        <h3>Code Quality!</h3>
+                                    </div>
+                                    <!-- people say description -->
+                                    <div class="people-say-description">
+                                        <p>I wanted to place a review since their support helped me within a day or so, which is nice1 Thanks and 5 stars!</p>
+                                    </div>
+                                    <!-- people say info -->
+                                    <div class="people-say-info">
+                                        <h4>Bright Hossain</h4>
+                                        <p style="margin-top: 10px;">/ Designer, HasTheme</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="people-say-card swiper-slide">
+                                <!-- people say image -->
+                                <div class="people-say-card-image">
+                                    <div class="people-say-event-image">
+                                        <a href="#"><img src="https://edumall.vuejstemplate.com/images/avatar/avatar-03.jpg" alt=""></a>   
+                                    </div>
+                                </div>
+                                <div class="people-say-card-content">
+                                    <!-- people say header -->
+                                    <div class="people-say-heading-text">
+                                        <h3>Customer Support!</h3>
+                                    </div>
+                                    <!-- people say description -->
+                                    <div class="people-say-description">
+                                        <p>I wanted to place a review since their support helped me within a day or so, which is nice1 Thanks and 5 stars!</p>
+                                    </div>
+                                    <!-- people say info -->
+                                    <div class="people-say-info">
+                                        <h4>Luvic Dubble</h4>
+                                        <p style="margin-top: 10px;">/ Marketer, HasTheme</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="people-say-card swiper-slide">
+                                <!-- people say image -->
+                                <div class="people-say-card-image">
+                                    <div class="people-say-event-image">
+                                        <a href="#"><img src="https://edumall.vuejstemplate.com/images/avatar/avatar-04.jpg" alt=""></a>   
+                                    </div>
+                                </div>
+                                <div class="people-say-card-content">
+                                    <!-- people say header -->
+                                    <div class="people-say-heading-text">
+                                        <h3>Great Quality!</h3>
+                                    </div>
+                                    <!-- people say description -->
+                                    <div class="people-say-description">
+                                        <p>I wanted to place a review since their support helped me within a day or so, which is nice1 Thanks and 5 stars!</p>
+                                    </div>
+                                    <!-- people say info -->
+                                    <div class="people-say-info">
+                                        <h4>Mina Hollic</h4>
+                                        <p style="margin-top: 10px;">/ Designer, HasTheme</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="people-say-card swiper-slide">
+                                <!-- people say image -->
+                                <div class="people-say-card-image">
+                                    <div class="people-say-event-image">
+                                        <a href="#"><img src="https://edumall.vuejstemplate.com/images/avatar/avatar-01.jpg" alt=""></a>   
+                                    </div>
+                                </div>
+                                <div class="people-say-card-content">
+                                    <!-- people say header -->
+                                    <div class="people-say-heading-text">
+                                        <h3>Great Quality!</h3>
+                                    </div>
+                                    <!-- people say description -->
+                                    <div class="people-say-description">
+                                        <p>I wanted to place a review since their support helped me within a day or so, which is nice1 Thanks and 5 stars!</p>
+                                    </div>
+                                    <!-- people say info -->
+                                    <div class="people-say-info">
+                                        <h4>Oliver Maya</h4>
+                                        <p style="margin-top: 10px;">/ Designer, HasTheme</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- Pagniation -->
+                        <div class="swiper-pagination" style="display: none;"></div>
+                    </div>
                 </div>
+            </div>
             </div>
 
             <!-- Collaborate Partners -->
@@ -248,16 +800,100 @@
 
             <!-- Contact, About us -->
             <div class="container contact-about-us">
-                <div class="contact-about-us wrapper">
+                <div class="contact-about-us-wrapper">
+                    <!-- Contact -->
                     <div>
+                        <!-- Contact Info -->
                         <a href="#"><img class="logo" src="https://edumall.vuejstemplate.com/images/logo/dark-logo.png" alt=""></a>
-                        <p>Call us</p>
-                        <span><a href="#" style="text-decoration: none; font-weight: 600;">800 388 80 90</a></span>
+                        <div style="margin: 40px 0 30px 0;">
+                            <p>Call us</p>
+                            <span><a href="#" style="text-decoration: none; font-weight: 600; color: #0071DC;">800 388 80 90</a></span>
+                        </div>
+                        <p>58 Howard Street #2 San Francisco</p>
+                        <p><a href="#" class="contact-us-email">contact@edumall.com</a></p>
+
+                        <!-- Contact Media -->
+                        <div class="contact-media-icon">
+                            <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                            <a href="#"> <i class="fa-brands fa-youtube"></i> </a>
+                            <a href="#"> <i class="fa-brands fa-linkedin-in"></i> </a>
+                        </div>
+                    </div>
+
+                    <!-- About -->
+                    <div>
+                        <h4>About</h4>
+                        <div class="about-list-wrap">
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Courses</a></li>
+                                <li><a href="#">Instructor</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Become A Teacher</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Links -->
+                    <div>
+                        <h4>Links</h4>
+                        <div class="link-list-wrap">
+                            <ul>
+                                <li><a href="#">News & Blogs</a></li>
+                                <li><a href="#">Library</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Partners</a></li>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">Courses</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Support -->
+                    <div>
+                        <h4>Support</h4>
+                        <div class="support-list-wrap">
+                            <ul>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Forum</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Condition</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Footer -->
+            <hr width="70%" style="margin: 20px auto; opacity: 0.4;">
+            <div class="footer">
+                <div class="footer-left">
+                    <a href="#">Terms Of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer-right">
+                    <p>© 2024 EduMall </p>
+                </div>
+            </div>
         </div>
-        <div class="footer"></div>
     </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper(".swiper-container", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      slidesPerView: 4, 
+      spaceBetween: 20
+    });
+    </script>
 </body>
 </html>
