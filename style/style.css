@@ -271,7 +271,7 @@
 .collab-partner-icon{
     padding: 20px 0;
     display: grid;
-    gap: 25px 150px;
+    gap: 25px 5rem;
     grid-template-columns: repeat(4,1fr);
 }
 
