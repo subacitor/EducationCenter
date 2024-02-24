@@ -13,16 +13,78 @@
 <body>
     <div class="Wrapper">
         <div class="nav bg-white-color">
-            <div class="">
+            <div id="mySidenav-Search" class="sidenav-Search">
+                
+                <div class="input-search search-input-bar" style="position: relative;" ">
+                    <form action="" class="md:block">
+                        <input type="text" class="h-15" style="background-color: #F2F2F2;" placeholder="Search course...">
+                        <i class="fa-solid fa-search" style="position: absolute; top: 50%; right: 10%; transform: translateY(-50%); color: #0071DC;"></i>
+                    </form>
+                </div>
+                <div class="zone-close-Search" onclick="closeNav_Search()">
+                </div>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <ul>
+                    <li style="text-align: right;"><a onclick="closeNav()" >X</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="">Features</a></li>
+                </ul>
+                <div class="zone-close-sidebar" onclick="closeNav()">
+                </div>
+            </div>
+            <div>
                 <ul class="space-around container">
                     <div class="d-flex it-center">
                         <li><a href="#"><img class="logo" src="https://edumall.vuejstemplate.com/images/logo/dark-logo.png" alt=""></a></li>
                         <div class="d-flex this-hide-1440px">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Courses</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Features</a></li>
+                            <li class="dropdown"><a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
+                                <div class="dropdown-content">
+                                    <div class="dropdown-core">
+                                     <a href="#">Link 1</a>
+                                     <a href="#">Link 2</a>
+                                     <a href="#">Link 3</a>
+                                    </div>
+                            </div>
+                            <li class="dropdown"><a href="#">Courses <i class="fa-solid fa-angle-down"></i></a>
+                                <div class="dropdown-content">
+                                    <div class="dropdown-core">
+                                     <a href="#">Link 1</a>
+                                     <a href="#">Link 2</a>
+                                     <a href="#">Link 3</a>
+                                    </div>
+                                 </div>
+                            </li>
+                            <li class="dropdown"><a href="#">Blog <i class="fa-solid fa-angle-down"></i></a>
+                                <div class="dropdown-content">
+                                    <div class="dropdown-core">
+                                     <a href="#">Link 1</a>
+                                     <a href="#">Link 2</a>
+                                     <a href="#">Link 3</a>
+                                    </div>
+                                 </div>
+                            </li>
+                            <li class="dropdown"><a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+                                <div class="dropdown-content">
+                                    <div class="dropdown-core">
+                                     <a href="#">Link 1</a>
+                                     <a href="#">Link 2</a>
+                                     <a href="#">Link 3</a>
+                                    </div>
+                                 </div>
+                            </li>
+                            <li class="dropdown"><a href="#">Features <i class="fa-solid fa-angle-down"></i></a>
+                                <div class="dropdown-content">
+                                    <div class="dropdown-core">
+                                     <a href="#">Link 1</a>
+                                     <a href="#">Link 2</a>
+                                     <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </li>
                         </div>
                     </div>
                     
@@ -33,7 +95,8 @@
                                 <i class="fa-solid fa-search" style="position: absolute; top: 50%; right: 10%; transform: translateY(-50%); color: #0071DC;"></i>
                             </form>
                         </div>
-                        <div class="toggle-bar d-none m-left this-block-1440px"><i class="fa-solid fa-bars"></i></div>
+                        <div class="toggle-bar d-none m-left this-block-1440px"><i class="fa-solid fa-bars fa-font-bigger" onclick="openNav()"></i></div>
+                        <div class="toggle-bar d-none m-left this-block-766px"><i class="fa-solid fa-search fa-font-bigger" onclick="openNav_Search()"></i></div>
                     </div>
             
                 </ul>
@@ -938,8 +1001,9 @@
       },
       pagination: {
         el: ".swiper-pagination",
-        clickable: true
+        clickable: true,
       },
+      loop: true,
       breakpoints: {
         320: {
             slidesPerView: 1,
@@ -974,6 +1038,21 @@
         delay: 3000, //3s
       }, 
     });
+        //sidebar
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "50%";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        //sidebar-search
+        function openNav_Search() {
+            document.getElementById("mySidenav-Search").style.height = "100%";
+        }
+        function closeNav_Search() {
+            document.getElementById("mySidenav-Search").style.height = "0";
+        }
     </script>
 </body>
 </html>
