@@ -9,6 +9,16 @@
     margin-right: auto;
     padding: 0 15rem;
     width: 100%;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-pagination{
+    margin: -10px 0;
 }
 
 /* Nav */
@@ -242,10 +252,11 @@
 .upcoming-education-event{
     text-align: center;
     padding: 50px 0;
+    width: 70%;
 }
 
-.upcoming-education-event{
-    width: 66%;
+.upcoming-education-event-wrapper{
+    margin: 20px 0;
 }
 
 
@@ -303,17 +314,21 @@
     padding: 50px 0;
 }
 
+.subscribe-news-input{
+    background-color: #F2F2F2;
+    padding: 15px; 
+    width: 100%; 
+    border: none;
+}
+
 .subscribe-news-btn {
-    position: absolute;
-    top: 50%;
-    right: 3%;
-    transform: translateY(-50%);
     background-color: #FFC221;
     font-weight: 600;
     color: #000000;
     border: none;
     padding: 14px 20px;
-    border-radius: 4px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     cursor: pointer;
 }
 
@@ -324,11 +339,45 @@
 
 
 /* Contact, About us */
-.contact-about-us-wrapper{
+/* .contact-about-us-wrapper{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     padding: 60px 0;
+}
+
+.contact-abot-link-support{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+} */
+
+.contact-about-us-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.contact-info,
+.contact-abot-link-support {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.contact-info {
+    max-width: 400px; 
+}
+
+.contact-abot-link-support {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-abot-link-support > div {
+    flex: 2;
+    min-width: 100px; 
 }
 
 .about-list-wrap ul,
@@ -398,6 +447,9 @@
 }
 
 
+
+
+
 /* Footer */
 .footer{
     display: flex;
@@ -463,7 +515,6 @@
     text-align: left;
     padding: 50px;
     margin: 20px 0;
-    width: 25% !important;
 }
 
 .people-say-event-image img{
@@ -483,6 +534,11 @@
     color: #666666;
     font-weight: 600;
     margin-bottom: 20px;
+    text-align: left;
+}
+
+.people-say-info{
+    font-size: 15px;
 }
 
 
@@ -490,22 +546,22 @@
 .course-level-type-all,
 .course-level-type-expert{
     background-color: #DCF4F6;
-    width: 35%;
-    padding: 3px 7px;
     text-align: center;
     color: #17C6D9;
     font-size: 14px;
     font-weight: 600;
+    padding: 5px;;
+    border-radius: 5px;
 }
 
 .course-level-type-beginner{
     background-color: #E7E8FF;
-    width: 35%;
-    padding: 3px 7px;
     text-align: center;
     color: #5B71FE;
     font-size: 14px;
     font-weight: 600;
+    padding: 5px;;
+    border-radius: 5px;
 }
 
 .course-type {
@@ -523,8 +579,6 @@
 }
 
 .course-heading-text{
-    width: 266px; 
-    height: 60px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap; 
@@ -542,8 +596,6 @@
 }
 
 .up-coming-heading-text{
-    width: 280px; 
-    height: 60px;
     text-align: left;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -722,6 +774,17 @@
    .nav ul{
     justify-content: space-around;
    }
+
+   .upcoming-education-event,
+   .people-say-about-wrapper,
+   .trending-course,
+   .collaborate-partner,
+   .contact-about-us{
+    width: 90%;
+   }
+   .subject-area{
+    padding: 5px 75px;
+   }
 }
                     /* 1200px */
 @media only screen and (max-width: 1200px) {
@@ -781,6 +844,15 @@
    }
     .collab-partner-icon{
         grid-template-columns: repeat(3,1fr);
+    }
+
+    .sub-to-new-wrapper{
+        display: block;
+        text-align: center;
+    }
+
+    .contact-about-us-wrapper{
+        flex-direction: column;
     }
 }
                     /* 639px */
