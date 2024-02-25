@@ -14,25 +14,27 @@
     <div class="Wrapper">
         <div class="nav bg-white-color">
             <div id="mySidenav-Search" class="sidenav-Search">
-                
                 <div class="input-search search-input-bar" style="position: relative;" ">
                     <form action="" class="md:block">
                         <input type="text" class="h-15" style="background-color: #F2F2F2;" placeholder="Search course...">
-                        <i class="fa-solid fa-search" style="position: absolute; top: 50%; right: 10%; transform: translateY(-50%); color: #0071DC;"></i>
+                        <i class="fa-solid fa-search fa-font-bigger" style="position: absolute; top: 50%; right: 30%; transform: translateY(-50%); color: #0071DC;"></i>
                     </form>
                 </div>
                 <div class="zone-close-Search" onclick="closeNav_Search()">
                 </div>
             </div>
             <div id="mySidenav" class="sidenav">
-                <ul>
-                    <li style="text-align: right;"><a onclick="closeNav()" >X</a></li>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Courses</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Pages</a></li>
-                    <li><a href="">Features</a></li>
-                </ul>
+                <div class="sidenav-content">
+                    <ul>
+                        <li style="text-align: right;" class="no-border"><img class="logo" src="https://edumall.vuejstemplate.com/images/logo/dark-logo.png" alt=""><a onclick="closeNav()" style="padding: 0;">X</a></li>
+                        <li class="d-flex space-between white-text"><a href="#">Home</a><i class="fas fa-angle-down"></i></li>
+                        <li class="d-flex space-between white-text"><a href="#">Courses</a><i class="fas fa-angle-down"></i></li>
+                        <li class="d-flex space-between white-text"><a href="#">Blog</a><i class="fas fa-angle-down"></i></li>
+                        <li class="d-flex space-between white-text"><a href="#">Pages</a><i class="fas fa-angle-down"></i></li>
+                        <li class="d-flex space-between white-text"><a href="#">Features</a><i class="fas fa-angle-down"></i></li>
+                    </ul>
+                </div>
+                
                 <div class="zone-close-sidebar" onclick="closeNav()">
                 </div>
             </div>
@@ -1040,7 +1042,7 @@
     });
         //sidebar
         function openNav() {
-            document.getElementById("mySidenav").style.width = "50%";
+            document.getElementById("mySidenav").style.width = "100%";
         }
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";

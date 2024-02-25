@@ -64,6 +64,7 @@
     transition: 0.4s;
 }
 
+
 .zone-close-Search{
     background-color: black;
     width: 100%;
@@ -75,6 +76,9 @@
     width: 100%;
     height: 100%;
     opacity: 0.7;
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
 .search-input-bar form{
     background: red;
@@ -93,6 +97,11 @@
     overflow-x: hidden;
     transition: 0.4s;
 }
+.sidenav-content{
+    background: black;
+    width: 70%;
+    height: 100%;
+}
 .sidenav ul{
     display: flex;
     align-items: center;
@@ -102,14 +111,34 @@
 }
 .sidenav ul li {
     width: 100%;
-    padding: 20px 0px;
+    padding: 20px 10px;
+    border-bottom: 1px solid rgb(95, 90, 90) ;
 }
-.sidenav ul li a{
- 
-    font-size: 1.4em;
-   
+.sidenav ul li a{   
     color: white !important;
 }
+
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+
+.dropdown-btn {
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  .active {
+    background-color: green;
+    color: white;
+  }
 .logo{
     width: 144px;
 }
@@ -760,6 +789,12 @@
 
 
 /* Customize */
+.no-border{
+    border: none !important;
+}
+.white-text{
+    color: white !important;
+}
 .fa-font-bigger{
     font-size: 1.5em;
 }
