@@ -81,7 +81,7 @@
     z-index: -1;
 }
 .search-input-bar form{
-    background: red;
+    background: #FFC221;
     text-align: center;
     padding: 25px;
     
@@ -101,6 +101,7 @@
     background: black;
     width: 70%;
     height: 100%;
+    overflow-y: auto;
 }
 .sidenav ul{
     display: flex;
@@ -115,14 +116,19 @@
     border-bottom: 1px solid rgb(95, 90, 90) ;
 }
 .sidenav ul li a{   
-    color: white !important;
+    color: white;
+    width: 100%;
+}
+
+.sidenav-content ul li a:hover{
+    color: #5B71FE;
 }
 
 .dropdown-container {
     display: none;
     background-color: #262626;
     padding-left: 8px;
-  }
+}
 
 .dropdown-btn {
     font-size: 20px;
@@ -154,7 +160,6 @@
     height: 60px;
 }
 
-
 .dropdown-content {
     opacity: 0;
     min-width: 150px;
@@ -163,16 +168,44 @@
     border-radius: 5px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     visibility: hidden;
-    z-index: 30;
+    z-index: 1100;
     transition: all 0.3s;
     cursor: pointer;
     top: 100px;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown::before{
+    content: '';
+    position: absolute;
+    visibility: hidden;
+    top: calc(100% - 30px);
+    width: 6%;
+    height: 30px;
+}
+
+.dropdown:hover::before{
     opacity: 1;
-    top: 70px;
     visibility: visible;
+}
+
+.dropdown:hover .dropdown-content{
+    opacity: 1;
+    top: calc(100%);
+    visibility: visible;
+}
+
+.dropdown-content.active {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    transition: none;
+}
+
+.dropdown-content.disable{
+    transition: none;
 }
 
 .dropdown-core{
@@ -180,7 +213,14 @@
     flex-direction: column;
 }
 .dropdown-core a{
-    padding: 15px !important;
+    padding: 15px 35px !important;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.dropdown-core a:hover{
+    color: #5B71FE;
 }
 
 /* Main */
@@ -844,6 +884,7 @@
 .space-around{
     justify-content: space-around;
 }
+
 .color-font-black{
     color: #333333;
 }
@@ -861,8 +902,12 @@
     display: none;
 }
 
-.m-left{
+.m-left-15{
     margin-left: 15px;
+}
+
+.m-left-30{
+    margin-left: 30px;
 }
 
 
@@ -907,6 +952,7 @@
    .subject-area{
     padding: 5px 75px;
    }
+   
 }
                     /* 1200px */
 @media only screen and (max-width: 1200px) {
@@ -923,69 +969,75 @@
     }
 }
 
-                    /* 766px */
-@media only screen and (max-width: 766px) {
-
-    .container{
-        padding: 30px 30px;
-    }
-   .main-bg{
-        flex-direction: column;
-        /* padding: 5rem; */
-        height: auto;
-   }
-   .t1, .t2{
-        text-align: left;
-   }
-
-    .t1{
+    /* 766px */
+    @media only screen and (max-width: 766px) {
+        .container {
+            padding: 30px 30px;
+        }
+                    
+        .main-bg {
+            flex-direction: column;
+            /* padding: 5rem; */
+            height: auto;
+        }
+                    
+        .t1, .t2 {
+            text-align: left;
+        }
+                    
+        .t1 {
         font-size: 15px;
         font-weight: bold;
+        }
+                    
+        .t2 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+                    
+        .btn-find-course {
+            text-align: left;
+        }
+                    
+        .this-hide-766px {
+            display: none;
+        }
+                    
+        .this-block-766px {
+            display: block;
+        }
+                    
+        .subject-area-wrapper {
+            grid-template-columns: repeat(2, 1fr);
+        }
+                    
+        .status-e-learn-wrapper {
+            display: block;
+        }
+                    
+        .collab-partner-icon {
+            grid-template-columns: repeat(3, 1fr);
+        }
+                    
+        .sub-to-new-wrapper {
+            display: block;
+            text-align: center;
+        }
+                    
+        .contact-about-us-wrapper {
+            flex-direction: column;
+        }
     }
-
-    .t2{
-        font-size: 40px;
-        font-weight: bold;
-    }
-   .btn-find-course{
-    text-align: left;
-   }
-
-   .this-hide-766px
-   {
-    display: none;
-   }
-   .this-block-766px
-   {
-    display: block;
-   }
-
-   .subject-area-wrapper
-   {
-       grid-template-columns: repeat(2,1fr);
-   }
-
-   .status-e-learn-wrapper{
-        display: block;
-   }
-    .collab-partner-icon{
-        grid-template-columns: repeat(3,1fr);
-    }
-
-    .sub-to-new-wrapper{
-        display: block;
-        text-align: center;
-    }
-
-    .contact-about-us-wrapper{
-        flex-direction: column;
-    }
-}
+                
                     /* 639px */
 @media only screen and (max-width: 639px) {
     .subject-area-wrapper
    {
        grid-template-columns: repeat(1,1fr);
+   }
+
+   .sidenav-content {
+    width: 100%;
    }
 }
     /* 480px */

@@ -14,7 +14,7 @@
     <div class="Wrapper">
         <div class="nav bg-white-color">
             <div id="mySidenav-Search" class="sidenav-Search">
-                <div class="input-search search-input-bar" style="position: relative;" ">
+                <div class="input-search search-input-bar" style="position: relative;">
                     <form action="" class="md:block">
                         <input type="text" class="h-15" style="background-color: #F2F2F2;" placeholder="Search course...">
                         <i class="fa-solid fa-search fa-font-bigger" style="position: absolute; top: 50%; right: 30%; transform: translateY(-50%); color: #0071DC;"></i>
@@ -26,12 +26,51 @@
             <div id="mySidenav" class="sidenav">
                 <div class="sidenav-content">
                     <ul>
-                        <li style="text-align: right;" class="no-border"><img class="logo" src="https://edumall.vuejstemplate.com/images/logo/dark-logo.png" alt=""><a onclick="closeNav()" style="padding: 0;">X</a></li>
-                        <li class="d-flex space-between white-text"><a href="#">Home</a><i class="fas fa-angle-down"></i></li>
-                        <li class="d-flex space-between white-text"><a href="#">Courses</a><i class="fas fa-angle-down"></i></li>
-                        <li class="d-flex space-between white-text"><a href="#">Blog</a><i class="fas fa-angle-down"></i></li>
-                        <li class="d-flex space-between white-text"><a href="#">Pages</a><i class="fas fa-angle-down"></i></li>
-                        <li class="d-flex space-between white-text"><a href="#">Features</a><i class="fas fa-angle-down"></i></li>
+                        <div style="width: 100%; display: flex; align-items: center; background-color: white;">
+                            <li style="text-align: left;" class="no-border sidenav-logo"><img class="logo" src="https://edumall.vuejstemplate.com/images/logo/dark-logo.png" alt=""></li>
+                            <i class="fa-solid fa-x" onclick="closeNav()" style="color: black; margin-right: 30px; cursor: pointer;"></i>
+                        </div>
+                        
+                        <li class="d-flex space-between white-text"><a href="#">Home</a><i class="fas fa-angle-down" onclick="toggleDropdown('homeDropdown')" style="margin-right: 20px; cursor: pointer;"></i></li>
+                            <div id="homeDropdown" class="dropdown-content">
+                            <div class="dropdown-core">
+                             <a href="#">Home 1</a>
+                             <a href="#">Home 2</a>
+                             <a href="#">Home 3</a>
+                            </div>
+                            </div>
+                        <li class="d-flex space-between white-text"><a href="#">Courses</a><i class="fas fa-angle-down" onclick="toggleDropdown('courseDropdown')" style="margin-right: 20px; cursor: pointer;"></i></li>
+                            <div id="courseDropdown" class="dropdown-content">
+                            <div class="dropdown-core">
+                             <a href="#">Courses 1</a>
+                             <a href="#">Courses 2</a>
+                             <a href="#">Courses 3</a>
+                            </div>
+                            </div>
+                        <li class="d-flex space-between white-text"><a href="#">Blog</a><i class="fas fa-angle-down" onclick="toggleDropdown('blogDropdown')" style="margin-right: 20px; cursor: pointer;"></i></li>
+                            <div id="blogDropdown" class="dropdown-content">
+                            <div class="dropdown-core">
+                             <a href="#">Blog 1</a>
+                             <a href="#">Blog 2</a>
+                             <a href="#">Blog 3</a>
+                            </div>
+                            </div>
+                        <li class="d-flex space-between white-text"><a href="#">Pages</a><i class="fas fa-angle-down" onclick="toggleDropdown('pageDropdown')" style="margin-right: 20px; cursor: pointer;"></i></li>
+                            <div id="pageDropdown" class="dropdown-content">
+                            <div class="dropdown-core">
+                             <a href="#">Pages 1</a>
+                             <a href="#">Pages 2</a>
+                             <a href="#">Pages 3</a>
+                            </div>
+                            </div>
+                        <li class="d-flex space-between white-text"><a href="#">Features</a><i class="fas fa-angle-down" onclick="toggleDropdown('featureDropdown')" style="margin-right: 20px; cursor: pointer;"></i></li>
+                            <div id="featureDropdown" class="dropdown-content">
+                            <div class="dropdown-core">
+                             <a href="#">Features 1</a>
+                             <a href="#">Features 2</a>
+                             <a href="#">Features 3</a>
+                            </div>
+                            </div>
                     </ul>
                 </div>
                 
@@ -46,44 +85,44 @@
                             <li class="dropdown"><a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
                                 <div class="dropdown-content">
                                     <div class="dropdown-core">
-                                     <a href="#">Link 1</a>
-                                     <a href="#">Link 2</a>
-                                     <a href="#">Link 3</a>
+                                     <a href="#">Home 1</a>
+                                     <a href="#">Home 2</a>
+                                     <a href="#">Home 3</a>
                                     </div>
-                            </div>
+                                </div>
                             <li class="dropdown"><a href="#">Courses <i class="fa-solid fa-angle-down"></i></a>
                                 <div class="dropdown-content">
                                     <div class="dropdown-core">
-                                     <a href="#">Link 1</a>
-                                     <a href="#">Link 2</a>
-                                     <a href="#">Link 3</a>
+                                     <a href="#">Courses 1</a>
+                                     <a href="#">Courses 2</a>
+                                     <a href="#">Courses 3</a>
                                     </div>
                                  </div>
                             </li>
                             <li class="dropdown"><a href="#">Blog <i class="fa-solid fa-angle-down"></i></a>
                                 <div class="dropdown-content">
                                     <div class="dropdown-core">
-                                     <a href="#">Link 1</a>
-                                     <a href="#">Link 2</a>
-                                     <a href="#">Link 3</a>
+                                     <a href="#">Blog 1</a>
+                                     <a href="#">Blog 2</a>
+                                     <a href="#">Blog 3</a>
                                     </div>
                                  </div>
                             </li>
                             <li class="dropdown"><a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
                                 <div class="dropdown-content">
                                     <div class="dropdown-core">
-                                     <a href="#">Link 1</a>
-                                     <a href="#">Link 2</a>
-                                     <a href="#">Link 3</a>
+                                     <a href="#">Pages 1</a>
+                                     <a href="#">Pages 2</a>
+                                     <a href="#">Pages 3</a>
                                     </div>
                                  </div>
                             </li>
                             <li class="dropdown"><a href="#">Features <i class="fa-solid fa-angle-down"></i></a>
                                 <div class="dropdown-content">
                                     <div class="dropdown-core">
-                                     <a href="#">Link 1</a>
-                                     <a href="#">Link 2</a>
-                                     <a href="#">Link 3</a>
+                                     <a href="#">Features 1</a>
+                                     <a href="#">Features 2</a>
+                                     <a href="#">Features 3</a>
                                     </div>
                                 </div>
                             </li>
@@ -97,8 +136,8 @@
                                 <i class="fa-solid fa-search" style="position: absolute; top: 50%; right: 10%; transform: translateY(-50%); color: #0071DC;"></i>
                             </form>
                         </div>
-                        <div class="toggle-bar d-none m-left this-block-1440px"><i class="fa-solid fa-bars fa-font-bigger" onclick="openNav()"></i></div>
-                        <div class="toggle-bar d-none m-left this-block-766px"><i class="fa-solid fa-search fa-font-bigger" onclick="openNav_Search()"></i></div>
+                        <div class="toggle-bar d-none m-left-15 this-block-1440px"><i class="fa-solid fa-bars fa-font-bigger" onclick="openNav()"></i></div>
+                        <div class="toggle-bar d-none m-left-15 this-block-766px"><i class="fa-solid fa-search fa-font-bigger m-left-30" onclick="openNav_Search()"></i></div>
                     </div>
             
                 </ul>
@@ -1046,6 +1085,15 @@
         }
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
+        }
+
+        // dropdown
+        function toggleDropdown(dropdownId) {
+            var dropdown = document.getElementById(dropdownId);
+            var isActive = dropdown.classList.toggle('active');
+            if (!isActive) {
+            dropdown.classList.add('disable');
+            }
         }
 
         //sidebar-search
