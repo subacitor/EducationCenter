@@ -9,6 +9,7 @@
     <link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap">
     <!-- SwipperJS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div class="Wrapper">
@@ -17,7 +18,7 @@
                 <div class="input-search search-input-bar" style="position: relative;">
                     <form action="" class="md:block">
                         <input type="text" class="h-15" style="background-color: #F2F2F2;" placeholder="Search course...">
-                        <i class="fa-solid fa-search fa-font-bigger" style="position: absolute; top: 50%; right: 30%; transform: translateY(-50%); color: #0071DC;"></i>
+                        <i class="fa-solid fa-search fa-font-bigger" style="position: absolute; top: 50%; right: 10%; transform: translateY(-50%); color: #0071DC;"></i>
                     </form>
                 </div>
                 <div class="zone-close-Search" onclick="closeNav_Search()">
@@ -31,7 +32,7 @@
                             <i class="fa-solid fa-x" onclick="closeNav()" style="color: black; margin-right: 30px; cursor: pointer;"></i>
                         </div>
                         
-                        <li class="d-flex space-between white-text"><a href="#">Home</a><i class="fas fa-angle-down" onclick="toggleDropdown('homeDropdown')" style="margin-right: 20px; cursor: pointer;"></i></li>
+                        <li class="d-flex space-between white-text"><a href="#">Home</a><i class="fas fa-angle-down rotate" onclick="toggleDropdown('homeDropdown')" style="margin-right: 20px; cursor: pointer;"></i></li>
                             <div id="homeDropdown" class="dropdown-content">
                             <div class="dropdown-core">
                              <a href="#">Home 1</a>
@@ -39,7 +40,7 @@
                              <a href="#">Home 3</a>
                             </div>
                             </div>
-                        <li class="d-flex space-between white-text"><a href="#">Courses</a><i class="fas fa-angle-down" onclick="toggleDropdown('courseDropdown')" style="margin-right: 20px; cursor: pointer;"></i></li>
+                        <li class="d-flex space-between white-text"><a href="#">Courses</a><i class="fas fa-angle-down rotate" onclick="toggleDropdown('courseDropdown')" style="margin-right: 20px; cursor: pointer;"></i></li>
                             <div id="courseDropdown" class="dropdown-content">
                             <div class="dropdown-core">
                              <a href="#">Courses 1</a>
@@ -47,7 +48,7 @@
                              <a href="#">Courses 3</a>
                             </div>
                             </div>
-                        <li class="d-flex space-between white-text"><a href="#">Blog</a><i class="fas fa-angle-down" onclick="toggleDropdown('blogDropdown')" style="margin-right: 20px; cursor: pointer;"></i></li>
+                        <li class="d-flex space-between white-text"><a href="#">Blog</a><i class="fas fa-angle-down rotate" onclick="toggleDropdown('blogDropdown')" style="margin-right: 20px; cursor: pointer;"></i></li>
                             <div id="blogDropdown" class="dropdown-content">
                             <div class="dropdown-core">
                              <a href="#">Blog 1</a>
@@ -55,7 +56,7 @@
                              <a href="#">Blog 3</a>
                             </div>
                             </div>
-                        <li class="d-flex space-between white-text"><a href="#">Pages</a><i class="fas fa-angle-down" onclick="toggleDropdown('pageDropdown')" style="margin-right: 20px; cursor: pointer;"></i></li>
+                        <li class="d-flex space-between white-text"><a href="#">Pages</a><i class="fas fa-angle-down rotate" onclick="toggleDropdown('pageDropdown')" style="margin-right: 20px; cursor: pointer;"></i></li>
                             <div id="pageDropdown" class="dropdown-content">
                             <div class="dropdown-core">
                              <a href="#">Pages 1</a>
@@ -63,7 +64,7 @@
                              <a href="#">Pages 3</a>
                             </div>
                             </div>
-                        <li class="d-flex space-between white-text"><a href="#">Features</a><i class="fas fa-angle-down" onclick="toggleDropdown('featureDropdown')" style="margin-right: 20px; cursor: pointer;"></i></li>
+                        <li class="d-flex space-between white-text"><a href="#">Features</a><i class="fas fa-angle-down rotate" onclick="toggleDropdown('featureDropdown')" style="margin-right: 20px; cursor: pointer;"></i></li>
                             <div id="featureDropdown" class="dropdown-content">
                             <div class="dropdown-core">
                              <a href="#">Features 1</a>
@@ -1092,9 +1093,13 @@
             var dropdown = document.getElementById(dropdownId);
             var isActive = dropdown.classList.toggle('active');
             if (!isActive) {
-            dropdown.classList.add('disable');
+                dropdown.classList.add('disable');
             }
         }
+        // Icon dropdown
+        $(".rotate").click(function () {
+            $(this).toggleClass("down");
+        })
 
         //sidebar-search
         function openNav_Search() {
@@ -1103,6 +1108,8 @@
         function closeNav_Search() {
             document.getElementById("mySidenav-Search").style.height = "0";
         }
+        console.log("asd");
+        
     </script>
 </body>
 </html>

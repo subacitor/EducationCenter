@@ -129,6 +129,16 @@
     background-color: #262626;
     padding-left: 8px;
 }
+.rotate {
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.rotate.down {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
 
 .dropdown-btn {
     font-size: 20px;
@@ -153,7 +163,7 @@
 }
 
 .input-search input{
-    min-width: 350px;
+    width: 100%;
     border: none;
     border-radius: 6px;
     padding: 0 60px;
